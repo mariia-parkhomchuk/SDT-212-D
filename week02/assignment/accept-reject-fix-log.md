@@ -37,22 +37,33 @@
 - **Decision:** accept 
 - **Follow-up prompt:** None.
 
-> Add more entries as needed. At least one entry must carry a full teach-back (what changed, why it works, the passing-test/run evidence).
+### Action 4
+- **Agent action:** Used ChatGPT to help create a Git branch, prepare the assignment files, exclude Python cache files, and push the branch to the personal GitHub repository.
+- **Files changed:** Added .gitignore; committed the assignment files, including the corrected reports.py and this log.
+- **Your explanation (teach-back):** A separate branch keeps the proposed change isolated from main. The .gitignore excludes Python bytecode and test caches so they do not clutter the submission. The branch was pushed to the personal repository because access to the course repository was unavailable.
+- **Evidence / test result:** Commit 0dede2a was created, and git push -u origin week02-issue2 completed successfully.
+- **Decision:**  Accept the branch preparation; verify the pull request separately.
+- **Follow-up prompt:** Asked ChatGPT to help create and verify a pull request.
 
 ---
 
 ## Pull request
-- **Pull request URL:** Pending — no pull request created yet.
-- **Visible status:** Pending — not yet created.
+- **Repository:** mariia-parkhomchuk/SDT-212-D
+- **Branch:** week02-issue2
+- **Base branch:** main
+- **Pull request URL:** Pending verification.
+- **Visible status:** Pending verification. The branch was pushed successfully, but the pull request must be created and checked separately.
+- **Required first line of PR description:** Do not merge.
 - **Existing test now passing:** test_top_students_returns_the_requested_number_in_rank_order — confirmed passing locally.
+- **Merge status:** Do not merge the pull request.
 
 ---
 
 ## MCP read-back
 Read your own pull request back through the connected MCP server, authorize the call, and record what happened.
 
-- **Tool called:** Pending.
-- **What you asked for:** Pending — no pull request is available to read back yet.
+- **Tool called:** Not yet completed.
+- **What you asked for:** Read back the created pull request.
 - **One field returned:** Pending.
 - **Authorized at the prompt:** Pending.
 
@@ -62,3 +73,4 @@ Read your own pull request back through the connected MCP server, authorize the 
 - **Tools / models used:** ChatGPT; PowerShell; uv and pytest.
 - **What AI contributed:** Helped inspect the code, explain the off-by-one error, and interpret test results.
 - **What I verified myself:** Ran the targeted test and the full test suite, inspected the working source files, and compared reports.py with the original ZIP archive.
+- **Limitations:** The work was done through a regular ChatGPT conversation. Agent Mode and MCP read-back have not yet been completed.
